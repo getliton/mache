@@ -1,0 +1,436 @@
+/*
+  Theme Name:  
+  Author: themesschool
+  Support: themesschool.com
+  Description: Creative HTML5 Template for Saas, Startup & Agency.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. Header
+3. Slider
+4. How work
+5. Access
+6. Price
+7. Testimonial
+8. Brand
+9. Newsletter
+10. Footer
+11. Blog
+12. Benifit
+13. Team
+14. Page title
+15. Contact
+16. Portfolio
+18. Login
+19. Faq
+20. Preloader
+21. 404
+22. Shop
+23. Cart
+24. Checkout
+25. Pagination
+26. Elements
+27. Breadcrumbs
+28. Coming Soon
+*/
+
+
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700&display=swap');
+ body {
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: #7b8491;
+	font-size: 15px;
+}
+img {
+	max-width: 100%;
+	transition: all 0.3s ease-out 0s;
+}
+.f-left {
+	float: left
+}
+.f-right {
+	float: right
+}
+.fix {
+	overflow: hidden
+}
+button {
+	cursor: pointer;
+	transition: .3s;
+}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover{
+	color: #ff5b5b;
+	text-decoration: none;
+}
+a,
+button {
+	color: #ff5b5b;
+	outline: medium none;
+}
+button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Poppins', sans-serif;
+	color: #233d63;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 600;
+	text-transform: normal;
+	line-height: 1.2;
+	transition: .3s;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 46px;
+	font-weight: 300;
+}
+h2 {
+	font-size: 36px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none;
+}
+p {
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 28px;
+	color: #7b8491;
+	margin-bottom: 15px;
+	transition: .3s;
+}
+hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+*::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+*::-moz-placeholder {
+	color: #7b8491;
+	font-size: 12px;
+	opacity: 1;
+}
+*::placeholder {
+	color: #7b8491;
+	font-size: 12px;
+	opacity: 1;
+}
+
+/* button style */
+.btn {
+	-moz-user-select: none;
+	background-color: #ed145b;
+	border: medium none;
+	border-radius: 50px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 1;
+	margin-bottom: 0;
+	padding: 20px 50px;
+	text-align: center;
+	text-transform: uppercase;
+	touch-action: manipulation;
+	transition: all 0.3s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+	border: 1px solid transparent;
+	position: relative;
+	transition: .7s ease-in-out;
+}
+.btn:hover{
+	color: #ed145b;
+	background-color: #fff;
+	transition:  .7s ease-in-out;
+}
+.breadcrumb > .active {
+	color: #888;
+}
+
+/* scrollUp */
+#scrollUp {
+	background: #ed145b;;
+	height: 60px;
+	width: 60px;
+	right: 50px;
+	bottom: 77px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 20px;
+	line-height: 59px;
+}
+#scrollUp:hover {
+	background: #161616;
+}
+
+/* Header Transprent & Header Sticky Start */
+.header-transparent {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 999;
+}
+.sticky-bar {
+	left: 0;
+	margin: auto;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.07);
+	z-index: 9999;
+	-webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+	animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+	-webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+	background: #fff;
+}
+.header-text-white.sticky-bar {
+	background: #1B1D3D;
+}
+.sticky-bar .white-menu ul li > a {
+	padding: 30px 0;
+}
+.sticky-bar .main-menu ul li > a {
+	padding: 30px 0;
+}
+/* Header Transprent & Header Sticky End */
+
+
+/*01. Header Area*/
+.main-menu ul {
+	float: right;
+}
+.main-menu ul li {
+	display: inline-block;
+}
+.main-menu ul li a {
+	color: #fff;
+	margin-right: 18px;
+	padding: 44px 0px;
+	display: block;
+}
+.main-menu ul li a:hover {
+	color: #e51558;
+	transition: .5s;
+}
+.header-left {
+	padding: 45px 0px;
+}
+
+/*01. End Header Area*/
+
+
+
+/*02. Slider-Area*/
+	.slider-height{
+		background-size: cover;
+		background-position: top center;
+		background-repeat: no-repeat;
+		padding-bottom: 226px;
+	}
+	.slider-content h1 {
+		padding-top: 222px;
+		text-align: center;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 300;
+		padding-bottom: 24px;
+		line-height: 1;
+	}
+	.slider-content span {
+		font-weight: 700;
+	}
+	.slider-content-border span {
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
+		background: #e51558;
+		height: 2px;
+		width: 30px;
+	}
+	.slider-content p {
+		text-align: center;
+		padding-top: 24px;
+		color: #fff;
+		padding-bottom: 45px;
+		line-height: 24px;
+	}
+	.slider-btn {
+		text-align: center;
+	}
+/*02. End Slider-Area*/
+
+
+/*03. About Area*/
+	.slider-height-about {
+		margin-top: -50px;
+		background-size: cover;
+		background-position: top center;
+		background-repeat: no-repeat;
+	}
+	.about-content {
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+	.about-content h2 {
+		padding-top: 200px;
+		font-size: 38px;
+		padding-bottom: 38px;
+		color: #6d6d6d;
+		padding-right: 65px;
+		font-weight: 300;
+		font-style: italic;
+		letter-spacing: 3px;
+	}
+	.about-content span {
+		position: absolute;
+		background: #ed145b;
+		height: 2px;
+		width: 203px;
+	}	
+	.about-content p {
+		color: #808080;
+		padding-top: 46px;
+		line-height: 26px;
+		font-size: 15px;
+		padding-bottom: 46px;
+	}
+	.about-popup h4 {
+		font-size: 15px;
+		text-transform: uppercase;
+		padding-bottom: 92px;
+		color: #ed145b;
+	}
+	.about-img {
+		top: 35%;
+		position: absolute;
+	}
+	.about-popup{
+		position: relative;
+	}
+	.about-popup a {
+		position: absolute;
+		top: -5px;
+		left: 23%;
+		color: 	#ed145b;
+		border: 2px solid #ed145b;
+		height: 30px;
+		width: 30px;
+		text-align: center;
+		border-radius: 30px;
+		line-height: 26px;
+		font-size: 10px;
+	}
+/*03. End About Area*/
+
+
+/*04. Service Area*/
+	.section-title h3 {
+		font-size: 36px;
+		font-weight: 300;
+		color: #979797;
+		text-align: center;
+		font-style: italic;
+		padding-top: 150px;
+		padding-bottom: 40px;
+	}
+	.section-title {
+		position: relative;
+	}
+	.section-title span {
+		position: absolute;
+		background: #ed145b;
+		height: 2px;
+		width: 200px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	.section-title p {
+		text-align: center;
+		margin-top: 40px;
+		padding-right: 54px;
+	}
+
+
+
+
+
+
+/*04. End Service Area*/
+
